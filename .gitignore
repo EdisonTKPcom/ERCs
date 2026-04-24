@@ -13,4 +13,4 @@ vendor
 .vercel
 
 # Claude Code
-.claude/
+.claude/settings.local.json

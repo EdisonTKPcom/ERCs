@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(bundle install)",
+      "Bash(bundle exec jekyll build)",
+      "Bash(bundle exec jekyll serve*)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git checkout*)",
+      "Bash(git switch*)",
+      "Bash(git restore*)",
+      "Bash(git branch*)",
+      "Bash(rg*)",
+      "Bash(ls*)",
+      "Bash(cat*)",
+      "Bash(head*)",
+      "Bash(tail*)",
+      "Bash(python3*)",
+      "Read(**)",
+      "Edit(ERCS/**)",
+      "Edit(assets/**)",
+      "Edit(_data/**)",
+      "Edit(reports/**)",
+      "Edit(.claude/**)",
+      "Write(ERCS/**)",
+      "Write(assets/**)",
+      "Write(reports/**)"
+    ],
+    "deny": [
+      "Bash(git push*)",
+      "Bash(rm -rf*)",
+      "Edit(LICENSE.md)"
+    ]
+  }
+}
