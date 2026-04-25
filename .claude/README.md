@@ -19,11 +19,26 @@ contributor gets the same slash commands, agents, and tool permissions.
 - `/new-erc` — scaffold a new ERC draft under `ERCS/` using `erc-template.md`.
 - `/validate-erc` — lint an ERC's frontmatter against the conventions used
   across `ERCS/*.md` (status/type/category vocabulary).
+- `/review-erc` — run the `erc-reviewer` subagent for a full editorial
+  review against EIP-1.
+- `/list-stagnant` — list `status: Stagnant` proposals (oldest first) for
+  rescue triage.
+- `/erc-matrix` — regenerate `reports/erc-matrix.md` from current
+  frontmatter.
 
 ## Agents
 
 - `erc-reviewer` — reviews an ERC draft for structural and editorial
   compliance with `erc-template.md` and EIP-1.
+- `erc-security-auditor` — deeper review of the **Security Considerations**
+  section against a standard threat-modeling checklist.
+
+## Project memory
+
+`CLAUDE.md` in this directory is loaded automatically by Claude Code on
+every session. It captures the repository's frontmatter vocabulary,
+required section order, build commands, and hard rules (e.g. never edit
+`LICENSE.md`, never assign EIP numbers).
 
 ## Local overrides
 
